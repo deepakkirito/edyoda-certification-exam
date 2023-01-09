@@ -1,0 +1,336 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-color: rgba(154, 97, 240, 0.096);
+}
+
+.overflowDisplay {
+    height: 76.4vh;
+    overflow: auto;
+}
+
+
+nav {
+    height: 80px;
+    display: grid;
+    grid-template-columns: 60% auto;
+    background-color: rgb(154, 97, 240);
+    background: radial-gradient(rgba(154, 97, 240, 0.217), rgba(154, 97, 240, 0.482));
+    box-shadow: 0px 0px 10px rgba(154, 97, 240, 0.495);
+}
+
+nav h1 {
+    margin-left: 22%;
+    color: rgba(103, 2, 253, 0.605);
+    margin-top: 23px;
+}
+
+navbar {
+    margin-top: 25px;
+    height: 100%;
+    display: flex;
+}
+
+navbar input {
+    width: 250px;
+    height: 30px;
+    margin-right: 13px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid;
+    color: rgb(123, 47, 238);
+    font-size: 14px;
+    /* font-weight: bolder; */
+}
+
+navbar input:focus {
+    outline: none;
+}
+
+navbar img {
+    /* margin-top: 5px; */
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: none;
+    box-shadow: 0px 0px 15px rgba(143, 78, 241, 0.664);
+}
+
+navbar img:hover {
+    transform: scale(1.15);
+}
+
+footer {
+    /* position: absolute; */
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    color: rgb(112, 27, 238);
+    padding-top: 20px;
+    padding-bottom: 15px;
+    /* height: 50px; */
+    background-color: rgb(154, 97, 240);
+    background: radial-gradient(rgba(154, 97, 240, 0.411), rgba(154, 97, 240, 0.799));
+    box-shadow: 0px 0px 10px rgba(154, 97, 240, 0.495);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header button{
+    margin-top: 30px;
+    margin-right: 13%;
+    width: 120px;
+    height: 35px;
+    border: 1px solid rgb(154, 97, 240);
+    border-radius: 10px;
+    background-color: rgba(154, 97, 240, 0.185);
+    box-shadow: 0px 0px 10px rgb(154, 97, 240);
+    color: rgb(87, 0, 128);
+    cursor: pointer;
+    /* display: none; */
+}
+
+header button:hover {
+    box-shadow: 0px 0px 15px rgb(154, 97, 240);
+    transform: scale(1.03);
+}
+
+body h3 {
+    margin-top: 3%;
+    margin-left: 13%;
+    color: rgba(101, 7, 242, 0.632);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    margin-left: 150px;
+    margin-bottom: 5%;
+}
+
+.card {
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(154, 97, 240);
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 15px rgb(154, 97, 240);
+    transform: scale(1.03);
+}
+
+#backBtn{
+    display: none;
+}
+
+.addButtons {
+    text-align: center;
+}
+
+.home {
+    margin: 10px;
+    width: 80px;
+    height: 35px;
+    border: 1px solid rgb(154, 97, 240);
+    border-radius: 10px;
+    background-color: rgba(154, 97, 240, 0.185);
+    box-shadow: 0px 0px 10px rgb(154, 97, 240);
+    color: rgb(58, 0, 128);
+    cursor: pointer;
+}
+
+.saveTeam {
+    margin: 10px;
+    width: 80px;
+    height: 35px;
+    border: 1px solid rgb(154, 97, 240);
+    border-radius: 10px;
+    background-color: rgba(154, 97, 240, 0.185);
+    box-shadow: 0px 0px 10px rgb(154, 97, 240);
+    color: rgb(62, 0, 128);
+    cursor: pointer;
+}
+
+.home:hover , .saveTeam:hover{
+    box-shadow: 0px 0px 15px rgb(154, 97, 240);
+    transform: scale(1.03);
+}
+
+.teamContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 12%;
+    margin-bottom: 10%;
+
+
+}
+
+.playerBox{
+    margin: 10px;
+    /* width: 250px; */
+    /* border: 1px solid purple; */
+    width: 200px;
+    transform: scale(1);
+}
+
+.teamContainer div img {
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 0px 5px ;
+    width: 100%;
+    cursor: pointer;
+}
+
+.playerDetails {
+    height: 90px;
+    overflow: hidden;
+    text-align: center;
+    color: whitesmoke;
+    border-top: 2px solid rgb(154, 97, 240);
+    border-radius: 0px 0px 5px 5px;
+    position: relative;
+    bottom: 5px;
+}
+
+.playerDetails:hover {
+    position: relative;
+    bottom: 115px;
+    padding: 0px 0px 110px 0px ;
+    overflow: visible;
+    
+}
+
+.playerDetails p {
+    font-size: 14px;
+}
+/* 
+.playerDetails {
+    border: none;
+    position: relative;
+    bottom: 203.5px;
+    padding: 0px 0px 110px 20px ;
+    left: 200px;
+    border-radius: 0px 5px 5px 0px ;
+    text-align: start;
+} */
+
+.playerDetailsClick {
+    /* display: none; */
+    position: relative;
+    bottom: 226px;
+    color: whitesmoke;
+    padding-left: 20px;
+    padding-bottom: 2.3px;
+    margin-top: 10px;
+    left: 200px;
+    border-radius: 0px 5px 5px 0px ;
+    box-shadow: 0px 0px 5px purple;
+    border-left: 2px solid rgb(154, 97, 240);
+}
+
+.playerDetailsClick h5 {
+    padding-top: 20px;
+}
+
+.playerDetailsClick p {
+    font-size: 14px;
+}
+
+.closeImg {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 165px;
+    top: 15px;
+    /* bottom: 150px; */
+    /* box-shadow: 0px 0px 5px whitesmoke; */
+    cursor: pointer;
+}
+
+.displayTeam {
+    display: flex;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+.displayTeamImg {
+    margin-left: 13%;
+    margin-right: 3%;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgb(61, 61, 61);
+    /* display: none; */
+}
+
+.displayTeam div {
+    margin-top: 10px;
+}
+
+.teamPlayerContainer {
+    margin-left: 13%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teamPlayerContainer img {
+    width: 200px;
+    box-shadow: 0px 0px 5px rgb(154, 97, 240);
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+}
+
+.addTeamPlayer {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.addTeamPlayer span {
+    /* width: 100px; */
+    padding: 15px 25px ;
+    border-radius: 15px;
+    color: whitesmoke;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.team {
+    background: rgb(154, 97, 240);
+
+}
+
+.player {
+    background: rgba(154, 97, 240, 0.500);
+    
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 13%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+input {
+    background: none;
+    border: none;
+    width: 250px;
+    height: 40px;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    border-bottom: 2px solid rgb(154, 97, 240);
+    font-size: 16px;
+    color: rgb(154, 97, 240);
+}
+
+input:focus {
+    outline: none;
+}

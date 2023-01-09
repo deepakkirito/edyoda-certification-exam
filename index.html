@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>IPL Teams</title>
+</head>
+
+<body>
+    <nav>
+        <h1>IPL Teams</h1>
+        <navbar>
+            <input id="searchValue" type="search" placeholder="Enter Team Name" title="Search Bar">
+            <img src="search.png" alt="search" title="Search Icon" id="searchIcon">
+        </navbar>
+    </nav>
+    <div class="overflowDisplay" id="overflowDisplay">
+        <header>
+            <h3 id="totalTeams">Total Teams : 0</h3>
+            <button id="backBtn">Back</button>
+            <button id="addBtn">Add Team/Player</button>
+        </header>
+        <div class="container" id="container"></div>
+        <div class="teamWrapper" id="teamWrapper">
+            <header>
+                <h3>Players List</h3>
+                <button id="closePlayer">Back</button>
+            </header>
+            <div class="teamContainer" id="teamContainer"></div>
+            
+        </div>
+        <div class="addTeam" id="addTeam">
+            <div class="addTeamPlayer" id="addTeamPlayer">
+                <span class="team">Add Team</span>
+                <span class="player">Add Player</span>
+            </div>
+            <!-- <h3 id="addTeamTitle">Add Team</h3> -->
+            <form id="teamForm">
+                <input id="Team_Name" type="text" placeholder="Enter Team Name">
+                <input id="Player_Count" type="text" placeholder="Enter Player Count">
+                <input id="Top_Batsmen" type="text" placeholder="Enter Top Batsman">
+                <input id="Top_Bowler" type="text" placeholder="Enter Top Bowler">
+                <input id="Championship_Won" type="text" placeholder="Enter Championship Won">
+                <input id="profile" type="text" placeholder="Enter Team Profile URL only">
+            </form>
+            <form id="playerForm">
+                <input id="playerName" type="text" placeholder="Enter Player Name">
+                <input id="from" type="text" placeholder="Enter Player Team">
+                <input id="price" type="text" placeholder="Enter Player Price">
+                <input id="description" type="text" placeholder="Enter Player Role">
+                <input id="isPlaying" type="text" placeholder="Enter Player Playing Status">
+                <input id="profile" type="text" placeholder="Enter player Profile URL only">
+            </form>
+            <div class="addButtons">
+                <button class="saveTeam" id="saveTeam">Save</button>
+                <button class="home">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Edyoda Certification Exam
+    </footer>
+</body>
+
+</html>
